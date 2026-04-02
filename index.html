@@ -282,6 +282,7 @@
     <section class="section access" id="access">
         <div class="container text-center">
             <h2 class="section-title">Access</h2>
+            <p class="text-center mb-5" style="font-weight: bold; font-size: 1.2rem; color: var(--text-muted); margin-top: -5px;">アクセス</p>
             
             <div class="hotel-image" style="margin: 30px 0;">
                 <img src="https://www.southernbeach-okinawa.com/access/images/img_fv-pc.webp" alt="サザンビーチホテル＆リゾート沖縄 外観" style="width: 100%; max-width: 800px; margin: 0 auto; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
@@ -364,31 +365,128 @@
             <h2 class="section-title">Registration Steps</h2>
             <p class="text-center mb-5">お申し込みの流れ</p>
             
-            <div class="steps-wrapper" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
-                <div class="step-card" style="background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: left; display: flex; align-items: center; gap: 20px; border-left: 8px solid var(--primary-color);">
-                    <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary-color); font-weight: bold; min-width: 80px;">STEP 1</div>
-                    <div style="font-size: 1.2rem; font-weight: bold;">WEBフォームから事前予約</div>
-                </div>
+            <style>
+                .flow-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: nowrap;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+                .flow-card {
+                    flex: 1;
+                    padding: 40px 20px;
+                    border-radius: 20px;
+                    text-align: center;
+                    min-height: 280px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                }
+                .flow-card-1 { background-color: #aee0ff; border: 3px solid #7cbbed; color: #1a496b; }
+                .flow-card-2 { background-color: #ffe0b2; border: 3px solid #f2a95c; color: #7a4f1a; }
+                .flow-card-3 { background-color: #bbf2b6; border: 3px solid #75cf6d; color: #1d5718; }
                 
-                <div class="step-card" style="background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: left; display: flex; align-items: center; gap: 20px; border-left: 8px solid var(--accent-color);">
-                    <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-color); font-weight: bold; min-width: 80px;">STEP 2</div>
-                    <div style="font-size: 1.2rem; font-weight: bold;">ご登録メールアドレスにチケット（案内）が届く</div>
-                </div>
+                .flow-step {
+                    font-family: 'Comic Sans MS', 'M PLUS Rounded 1c', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    margin-bottom: 25px;
+                    letter-spacing: 2px;
+                }
+                .flow-icon {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .flow-icon svg { width: 100%; height: 100%; }
+                .flow-text { font-size: 1.15rem; font-weight: bold; line-height: 1.6; }
                 
-                <div class="step-card" style="background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: left; display: flex; align-items: center; gap: 20px; border-left: 8px solid var(--secondary-color);">
-                    <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--secondary-color); font-weight: bold; min-width: 80px;">STEP 3</div>
-                    <div style="font-size: 1.2rem; font-weight: bold;">当日会場の受付でスマホ画面を見せるだけ！</div>
+                .flow-arrow { display: flex; align-items: center; justify-content: center; padding: 0 5px; }
+                .flow-arrow svg { width: 40px; height: 40px; }
+                .flow-arrow-1 { color: #509ce0; }
+                .flow-arrow-2 { color: #f2a95c; }
+
+                @media (max-width: 768px) {
+                    .flow-container { flex-direction: column; }
+                    .flow-card { width: 100%; min-height: 220px; padding: 30px 20px; }
+                    .flow-arrow { transform: rotate(90deg); margin: 5px 0; }
+                }
+            </style>
+            
+            <div class="flow-container">
+                <!-- STEP 1 -->
+                <div class="flow-card flow-card-1">
+                    <div class="flow-step" style="color: #498ad1;">STEP 1</div>
+                    <div class="flow-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                            <circle cx="12" cy="10" r="2" fill="currentColor"></circle>
+                        </svg>
+                    </div>
+                    <div class="flow-text">WEBフォームから<br>事前予約</div>
+                </div>
+
+                <div class="flow-arrow flow-arrow-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <polyline points="13 5 20 12 13 19"></polyline>
+                    </svg>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="flow-card flow-card-2">
+                    <div class="flow-step" style="color: #d68128;">STEP 2</div>
+                    <div class="flow-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                            <circle cx="12" cy="13" r="3" fill="#e85b46" stroke="#e85b46"></circle>
+                        </svg>
+                    </div>
+                    <div class="flow-text">ご登録メールアドレスに<br>チケット（案内）が届く</div>
+                </div>
+
+                <div class="flow-arrow flow-arrow-2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <polyline points="13 5 20 12 13 19"></polyline>
+                    </svg>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="flow-card flow-card-3">
+                    <div class="flow-step" style="color: #43a339;">STEP 3</div>
+                    <div class="flow-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            <circle cx="12" cy="10" r="3" fill="#30a656" stroke="#30a656"></circle>
+                        </svg>
+                    </div>
+                    <div class="flow-text">当日会場の受付で<br>スマホ画面を見せるだけ！</div>
                 </div>
             </div>
             
         </div>
     </section>
 
-    <!-- 協賛・後援・協力 (Sponsors / Supporters) -->
+    <!-- 協賛・後援 (Sponsors / Supporters) -->
     <section class="section sponsors bg-light-blue" id="sponsors">
         <div class="container text-center">
             <h2 class="section-title">Sponsors / Supporters</h2>
-            <p class="text-center mb-5">協賛・後援・協力</p>
+            <p class="text-center" style="font-weight: bold; font-size: 1.2rem; color: var(--text-muted); margin-top: -5px; margin-bottom: 30px;">協賛・後援</p>
+            
+            <p style="font-size: 1.8rem; font-weight: 900; color: #b3c5d6; letter-spacing: 3px; font-style: italic; margin-bottom: 20px; font-family: Arial, sans-serif;">Coming Soon...</p>
             
             <div class="sponsors-wrapper" style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
                 <!-- ダミーロゴ -->
@@ -418,20 +516,45 @@
     <!-- CTA / メッセージセクション -->
     <section class="section cta-section" id="apply" style="padding: 60px 0 80px;">
         <div class="container">
+            <h2 class="section-title">Message</h2>
+            <p class="text-center mb-5" style="font-weight: bold; font-size: 1.2rem; color: var(--text-muted); margin-top: -5px;">メッセージ</p>
+            
             <div class="final-message-cta" style="max-width: 900px; margin: 0 auto; background: var(--secondary-color); color: var(--white); padding: 50px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
                 <!-- 背景のクォーテーション -->
                 <div style="position: absolute; top: -10px; left: 20px; font-size: 8rem; font-family: serif; color: rgba(255,255,255,0.15); line-height: 1;">&ldquo;</div>
                 
                 <div style="position: relative; z-index: 2; padding: 0 20px;">
                     <p style="font-size: 1.15rem; line-height: 2; margin-bottom: 25px;">
-                        平和は、日常のささやかな笑顔から始まります。<br>
-                        絵本を開くとき、そこには誰もが安心できる温かい世界が広がっています。<br>
-                        沖縄から世界へ、子どもたちの未来へ、一緒に平和の種をまいていきましょう。<br>
-                        皆様のご来場を心よりお待ち申し上げております。<br>
-                        <span style="font-size: 0.95rem; opacity: 0.9;">（※メッセージは仮の内容です）</span>
+                        最後までご覧いただき、本当にありがとうございます。<br><br>
+                        
+                        2022年の第1回から数えて、今年で第5回。<br>
+                        正直、ここまで続けてこられるとは思っていなかったと言えば嘘になります。<br>
+                        でも毎回、皆さんの笑顔と「来て良かった」という言葉が、また次へと私たちを突き動かしてきました。<br><br>
+                        
+                        一冊の絵本が、世界を変えると信じていますか？<br><br>
+                        
+                        私は、信じています。<br>
+                        大げさに聞こえるかもしれない。<br>
+                        でも、読み聞かせの中で子どもがハッとした顔をした瞬間、<br>
+                        大人が目に涙を浮かべた瞬間、<br>
+                        そのひとつひとつが、確かに何かを変えていると感じてきました。<br><br>
+                        
+                        <strong>2026年6月13日、沖縄で、あなたと一緒にその瞬間を体験したい。</strong><br><br>
+                        
+                        田島征彦先生の命の言葉を、絵本の温もりを、<br>
+                        そして全国から集まる仲間たちの熱量を、<br>
+                        ぜひその目で、その耳で、その肌で感じてください。<br><br>
+                        
+                        申し込みは、今すぐできます。<br>
+                        難しいことは何もありません。ボタンを一つ押すだけで、あなたもこの輪の中に入れます。<br><br>
+                        
+                        一冊の絵本から、平和は始まる。<br>
+                        その言葉を、一緒に体感しに来てください。<br><br>
+                        
+                        心よりお待ちしています。
                     </p>
                     <p class="message-author" style="text-align: right; font-size: 1.25rem; font-weight: bold; margin-bottom: 40px;">
-                        一般財団法人 絵本未来創造機構 理事長 仲宗根敦子
+                        ― 一般財団法人 絵本未来創造機構 理事長 仲宗根敦子
                     </p>
                     
                     <div class="text-center" style="border-top: 1px dashed rgba(255,255,255,0.4); padding-top: 40px;">
