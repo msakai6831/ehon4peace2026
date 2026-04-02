@@ -128,7 +128,7 @@ img {
 .hero-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(135deg, rgba(0, 119, 182, 0.95), rgba(0, 150, 199, 0.95));
+    background: linear-gradient(135deg, rgba(0, 119, 182, 0.6), rgba(0, 150, 199, 0.5)), url('okinawa_peace_ehon.png') center/cover no-repeat;
     z-index: 1;
 }
 .hero-content {
