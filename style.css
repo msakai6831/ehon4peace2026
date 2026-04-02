@@ -454,6 +454,7 @@ img {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .concept-box { padding: 40px 20px; font-size: 1.05rem; }
     .hero-title { font-size: 2.5rem; }
     .hero-catchphrase { font-size: 1.3rem; }
     .guest-card { flex-direction: column; }
