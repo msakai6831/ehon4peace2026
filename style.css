@@ -207,6 +207,8 @@ img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     font-size: 1.2rem;
     line-height: 2;
+    max-width: 640px;
+    margin: 0 auto;
 }
 .concept-box p { margin-bottom: 20px; }
 .concept-box p:last-child { margin-bottom: 0; }
