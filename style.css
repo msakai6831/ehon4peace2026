@@ -174,12 +174,20 @@ img {
     border: 1px solid rgba(255,255,255,0.3);
 }
 .hero-date, .hero-venue {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-.hero-date span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
     font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    letter-spacing: 0.05em;
+}
+.hero-date span.day {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.hero-date span.time {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 10px;
 }
 .hero-price {
     font-size: 1.4rem;
