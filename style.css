@@ -1,9 +1,9 @@
 /* Reset & Base Variables */
 :root {
-    --primary-color: #0077b6; /* 濃いブルー */
-    --secondary-color: #0096c7; /* 明るいブルー */
-    --accent-color: #ffb703; /* イエローオレンジのアクセント */
-    --bg-light: #caf0f8; /* 非常に明るい水色 */
+    --primary-color: #d48806; /* 濃いめの卵色・オレンジ */
+    --secondary-color: #fca311; /* 黄身の色 */
+    --accent-color: #e63946; /* 赤色のアクセント */
+    --bg-light: #fff9e6; /* 薄い卵色 */
     --text-main: #333333;
     --text-muted: #666666;
     --white: #ffffff;
@@ -52,7 +52,7 @@ img {
 .mb-4 { margin-bottom: 2rem; }
 .mt-3 { margin-top: 1.5rem; }
 .text-primary { color: var(--primary-color); }
-.bg-light-blue { background-color: rgba(202, 240, 248, 0.4); }
+.bg-theme-light { background-color: var(--bg-light); }
 .text-large { font-size: 1.2rem; }
 
 .section {
